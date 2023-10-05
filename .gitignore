@@ -5,4 +5,8 @@ venv/
 task_for_uptrader/__init__.py
 task_for_uptrader/wsgi.py
 task_for_uptrader/asgi.py
+task_for_uptrader/__pycache__/
+
+menuapp/__init__.py
+menuapp/migrations
 
