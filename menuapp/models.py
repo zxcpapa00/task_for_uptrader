@@ -11,4 +11,9 @@ class MenuItem(models.Model):
     def __str__(self):
         return self.title
 
-
+    def get_descendants(self):
+        descendants = []
+        for child in self.children.all():
+            descendants.append(child)
+            descendants.extend(child.get_descendants())
+        return descendants
