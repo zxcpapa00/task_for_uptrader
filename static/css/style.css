@@ -1,0 +1,48 @@
+/* Основные стили для меню */
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+/* Стили для подменю */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Подменю будет отображаться под родительским элементом */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.menu-item:hover .submenu {
+    display: block;
+}
+
+.submenu-item {
+    clear: both;
+    width: 100%;
+}
+
+.submenu-item a {
+    padding: 10px;
+    display: block;
+}
+
+.active {
+    background-color: #ff0062;
+    color: #fff;
+}
